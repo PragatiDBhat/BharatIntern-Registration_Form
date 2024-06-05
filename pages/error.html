@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Already Exists</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            background: #fff;
+            padding: 30px 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container h2 {
+            margin-bottom: 20px;
+            color: #d32f2f;
+            font-size: 2em;
+            animation: slideIn 0.5s ease-in-out;
+        }
+
+        .container p {
+            margin-bottom: 20px;
+            color: #555;
+            font-size: 1.1em;
+            animation: slideIn 0.7s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .container .link {
+            display: block;
+            margin-top: 20px;
+            color: #7b1fa2;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        .container .link:hover {
+            text-decoration: underline;
+            color: #ab47bc;
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                padding: 20px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>User Already Exists</h2>
+    <p>An account with this email already exists. Please log in or use a different email to register.</p>
+    <a href="http://localhost:3000/#" class="link">Try Again</a>
+</div>
+
+</body>
+</html>
